@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKGROUND PHOTO SLIDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+
+<h1 class="title">THIS IS A BACKGROUND PHOTO SLIDER</h1>
+
+<button id="btn1" class="btn" >Next</button>
+
+<button id="btn2" class="btn" >Next</button>
+
+<button id="btn3" class="btn" >Next</button>
+
+<button id="btn4" class="btn" >Next</button>
+
+</body>
+
+<script>
+
+
+document.getElementById("btn1").addEventListener("click", function() {
+    document.body.style.backgroundImage = "url('img/manzara2.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.getElementById("btn1").style.display = "none";
+    document.getElementById("btn2").style.display = "block";
+    document.getElementById("btn3").style.display = "none";
+    document.getElementById("btn4").style.display = "none";
+});
+
+document.getElementById("btn2").addEventListener("click", function() {
+    document.body.style.backgroundImage = "url('img/manzara3.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.getElementById("btn2").style.display = "none";
+    document.getElementById("btn1").style.display = "none";
+    document.getElementById("btn3").style.display = "block";
+    document.getElementById("btn4").style.display = "none";
+});
+
+document.getElementById("btn3").addEventListener("click", function() {
+    document.body.style.backgroundImage = "url('img/manzara4.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.getElementById("btn3").style.display = "none";
+    document.getElementById("btn2").style.display = "none";
+    document.getElementById("btn1").style.display = "none";
+    document.getElementById("btn4").style.display = "block";
+});
+
+document.getElementById("btn4").addEventListener("click", function() {
+    document.body.style.backgroundImage = "url('img/manzara.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.getElementById("btn4").style.display = "none";
+    document.getElementById("btn2").style.display = "none";
+    document.getElementById("btn3").style.display = "none";
+    document.getElementById("btn1").style.display = "block";
+});
+
+</script>
+
+</html>

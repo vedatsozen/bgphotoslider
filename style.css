@@ -1,0 +1,67 @@
+body {
+    padding: 0;
+    background-image: url("img/manzara.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1.title {
+   
+    margin: auto;
+    margin-top: 200px;
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: white;
+    width:800px;
+ 
+    }
+
+
+.btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:40px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: forestgreen;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(55, 175, 55);
+}
+
+.btn:active {
+
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#btn1 {
+    z-index: -1;
+}
+
+#btn2 {
+    z-index: -2;
+}
+
+#btn3 {
+    z-index: -3;
+}
+
+#btn4 {
+    z-index: -4;
+}
+
+
+
+
+
+
